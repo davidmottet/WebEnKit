@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #COLUMN
+\*------------------------------------*/
+@mixin col($int){
+	$value : 100/(12/$int);
+	$gap : ($gutter/2);
+	position: relative;
+	display: inline-block;
+
+	vertical-align: top;
+
+	font-size: initial;
+	word-break: break-word;
+
+	width: #{$value}%;
+	padding: 0 #{$gap}px;
+}

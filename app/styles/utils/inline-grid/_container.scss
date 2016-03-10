@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*------------------------------------*\
+    #CONTAINER
+\*------------------------------------*/
+
+@mixin container {
+	$val: $gutter/2;
+  padding-right: #{$val}px;
+  padding-left: #{$val}px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}

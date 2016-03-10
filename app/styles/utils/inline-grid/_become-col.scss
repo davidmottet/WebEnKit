@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    #BECOME COL
+\*------------------------------------*/
+
+@mixin become-col($int, $responsive){
+	$value : 100/(12/$int);
+	@media (max-width: #{$responsive}px) {
+		width: #{$value}%;
+	}
+}
