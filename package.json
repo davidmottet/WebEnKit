@@ -1,7 +1,7 @@
 {
-  "name": "webstarter",
+  "name": "WebEnKit",
   "version": "0.0.1",
-  "description": "Web starter kit",
+  "description": "Web starter en kit",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "babel-core": "^6.0.15",
