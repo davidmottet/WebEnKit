@@ -1,0 +1,43 @@
+// Button
+// Setting
+$transition: all .25s ease-out;
+$border-radius: 0;
+$color: #ffffff;
+$fs: .9rem;
+$margin: .5rem .5rem;
+$padding: .85em 1em;
+$color-bg: #2199e8;
+$amount: 8;
+
+@mixin btn-theme ($color-bg: $color-bg, $color: $color) {
+  transition: $transition;
+  display: inline-block;
+  vertical-align: middle;
+
+  cursor: pointer;
+  -webkit-appearance: none;
+
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+
+  color: $color;
+
+  font-size: $fs;
+  line-height: 1;
+  text-align: center;
+
+  margin: $margin;
+  padding: $padding;
+
+  background-color: $color-bg;
+
+  &:hover{
+    background-color: darken($color-bg, $amount);
+  }
+  &:active, &.active{
+    background-color: darken($color-bg, $amount);
+  }
+  &:focus, &.focus{
+    background-color: darken($color-bg, $amount);
+  }
+}
