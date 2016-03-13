@@ -2,7 +2,7 @@
     #RESPONSIVE COLUM
 \*------------------------------------*/
 
-@mixin col-responsive($int, $responsive){
+@mixin col-responsive($int, $responsive) {
 	$value : 100/(12/$int);
 	$gap : ($gutter/2);
 	width:100%;
